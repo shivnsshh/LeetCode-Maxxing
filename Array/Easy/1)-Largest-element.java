@@ -12,4 +12,4 @@ class Solution {
     }
 }
 
-//https://www.geeksforgeeks.org/problems/second-largest3735/1
+//http://geeksforgeeks.org/problems/largest-element-in-array4009/1
