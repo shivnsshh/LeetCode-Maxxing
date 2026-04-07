@@ -19,4 +19,4 @@ class Solution {
     }
 }
 
-//https://leetcode.com/problems/majority-element/description/?utm=codolio
+//https://leetcode.com/problems/majority-element/description/
