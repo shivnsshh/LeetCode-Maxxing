@@ -1,20 +1,36 @@
-class Solution {
-    public String removeOuterParentheses(String s) {
-        StringBuilder res = new StringBuilder();
-        int depth = 0;
+class Solution 
+{
+    public String removeOuterParentheses(String s) 
+    {
+        StringBuilder sb = new StringBuilder();
+        int count = 0;
 
-        for (char c : s.toCharArray()) {
-            if (c == '(') {
-                if (depth > 0) res.append(c);
-                depth++;
-            } else {
-                depth--;
-                if (depth > 0) res.append(c);
+        for(int i = 0; i<s.length(); i++)
+        {
+            char c = s.charAt(i);
+
+            if(c == '(')
+            { 
+                if(count != 0)
+                {
+                    sb.append(c);
+                }
+                count++;
             }
-        }
+            else
+            {
+                count--;
 
-        return res.toString();
+                if(count != 0)
+                {
+                    sb.append(c);
+                }
+            }
+        
+        }
+    return sb.toString();
     }
+    
 }
 
 //https://leetcode.com/problems/remove-outermost-parentheses/?utm=codolio
